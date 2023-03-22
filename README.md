@@ -3,6 +3,7 @@
 [111-1] Web Programming Final (Group 110) 名稱：台北旅遊行程規劃服務
 
 Demo 影片連結：https://www.youtube.com/watch?v=u73USDYZA78
+Deploy 影片連結：https://abc-production-09a2.up.railway.app/
 ---
 > 組員
 * b08703045 財金四 鄧德齊
