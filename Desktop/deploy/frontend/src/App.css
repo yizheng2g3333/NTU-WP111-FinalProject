@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=PT+Sans&display=swap');
+
+* {
+      font-family: 'PT Sans', 'Noto Sans TC', sans-serif;
+      box-sizing: border-box;
+}
+
+body, #root, .ant-layout {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      margin: 0;
+}
+    
+.ant-select-selector{
+      height: 100% !important;
+}
+
+.login-page{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.login-box{
+      height: 90%;
+      width: 80%;
+      background-color: white;
+      box-shadow: 0 0 40px rgba(0,0,0,0.16);
+      border-radius: 12px;
+      overflow: hidden;
+}
+
+.RegButton {
+      margin-left: 2%;
+}
+
+#login-form {
+      height: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding: 55px;
+      width: 55%;
+      float: left;
+}
+
+#login-form p {
+      margin-bottom: 30px;
+}
+
+#login-form p.form-title {
+      color: #333333;
+      font-size: 42px;
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 0;
+}
+
+#login-form .ant-form-item-label > label.ant-form-item-required::before {
+      display: none;
+}
+.ant-form-item-control-input-content {
+      text-align: left;
+}
+#login-form .ant-input-affix-wrapper {
+      padding: 12px 15px;
+}
+#login-form_username {
+      height: 48px;
+}
+#login-form_email {
+      height: 48px;
+}
+#login-form .ant-btn {
+      height: 42px;
+      letter-spacing: 1px;
+      border-radius: 6px;
+}
+.login-form-button {
+      width: 100%;
+}
+
+.illustration-wrapper {
+      background-color: #626262;
+      overflow: hidden;
+      width: 45%;
+      height: 100%;
+      float: left;
+}
+
+.illustration-wrapper img {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+      .login-box {
+            height: 100%;
+            width: 100%;
+            border-radius: 0;
+      }
+      .illustration-wrapper {
+            display: none;
+      }
+      #login-form {
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+      }
+      .ant-layout-sider{
+            width: 100% !important;
+            height: 20px;
+            position: absolute !important;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            max-width: unset !important;
+      }
+      .ant-layout-sider>.ant-layout-sider-trigger{
+            display: none;
+      }
+      .ant-menu-title-content{
+            display: none;
+      }
+      .ant-menu{
+            align-items: center;
+            justify-content: center;
+      }
+      .ant-menu>li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10%;
+      }
+      .ant-menu-sub{
+            position: absolute;
+            width: 80%;
+            height: 30vh;
+            bottom: 20px;
+      }
+      .ant-menu-submenu-title{
+            position: absolute;
+      }
+      .ant-menu-sub>li{
+            display: unset;
+            align-items: unset;
+            justify-content: unset;
+            width: 100%;
+      }
+      .ant-menu-sub>li .ant-menu-title-content{
+            display: block;
+      }
+}
+    
+.ant-layout-sider-trigger{
+      background: none !important;
+}
+
+.ant-card-meta-description{
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+}
+
+.ant-menu-submenu-selected{
+      color: white !important;
+}
+
+.ant-menu-item{
+      width: 10%;
+}
+
+.Heart{
+      margin: 0 10px 0 5px;
+}
+.Heart:hover{
+      transform: scale(1.2);
+      transition-duration: 0.3s;
+}
+
+.ant-card .ant-card-meta-title{
+      white-space: normal;
+}

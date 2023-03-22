@@ -1,0 +1,100 @@
+type Query {
+  spot(Class1: String): [Spot!]!
+  singlespot(Id: String): [Spot!]!
+  myFav(Email: String!): User!
+}
+
+type Mutation {
+  travel(data: Array): Item!
+  getLineString(data: String): Item_geojson!
+  search(Name: String, Town: String): [Spot!]!
+  register(Name: String!, Email: String!, Password: String!): User
+  login(Email: String, Password: String): User
+  authToken(Email: String, Token: String): User
+  changePass(
+    Email: String
+    currentPassword: String
+    passwordToChange: String
+  ): User!
+  addFav(Email: String!, Name: String!): User!
+  delFav(Email: String!, Name: String!): User!
+  report(Email: String!, Report: String!, Time: String!): Report!
+}
+
+type Subscription {
+  notification: Notification
+}
+
+type Notification {
+  notificationMessage: String
+  id: String
+  userId: String
+  isRead: Boolean
+}
+
+type User {
+  Name: String
+  Email: String
+  Password: String
+  Favourites: [Spot]!
+  Filter: [filter]
+  Token: String
+}
+
+type filter {
+  nature: Int
+  art: Int
+  eat: Int
+  spa: Int
+  play: Int
+  sport: Int
+}
+
+type Report {
+  Email: String!
+  Report: String!
+  Time: String!
+}
+
+type Item {
+  steps: [[Spot!]]
+}
+
+type Item_geojson {
+  geojson: String!
+}
+
+input Array {
+  Email: String!
+  position: String!
+  time: String!
+  a1: Int!
+  a2: Int!
+  a3: Int!
+  a4: Int!
+  a5: Int!
+  a6: Int!
+}
+
+type Spot {
+  Id: String
+  Name: String
+  Region: String
+  Website: String
+  Town: String
+  Class1: String
+  Class2: String
+  Class3: String
+  Toldescribe: String
+  Picture1: String
+  Opentime: String
+  class_result: [Result!]
+  Px: String
+  Py: String
+}
+
+type Result {
+  first: String
+  second: String
+  third: String
+}

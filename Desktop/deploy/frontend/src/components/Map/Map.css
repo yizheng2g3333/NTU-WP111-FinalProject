@@ -1,0 +1,16 @@
+.map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.ol-zoom button{
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 10px !important;
+}
+
+.ol-control{
+    background: none !important;
+}

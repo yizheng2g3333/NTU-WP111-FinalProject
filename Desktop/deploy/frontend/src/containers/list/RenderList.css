@@ -1,0 +1,88 @@
+.site-card-wrapper{
+    width: 100%;
+    height: 80vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.myowncard.ant-card{
+    border: none;
+}
+
+.myowncard.ant-card:hover {
+    animation: shadow_move 1.5s infinite;
+}
+
+.ant-card-cover{
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.anticon-close:hover{
+    background-color: #e790b3 !important;
+    color: white !important;
+    transition-duration: 0.3s;
+}
+
+.ant-card-actions, .ant-card-actions>li{
+    border: none !important;
+}
+
+.ant-card-actions .anticon:hover{
+    color: #e790b3 !important;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-button {
+    background: transparent;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color:#626262;
+    border: none;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: transparent;
+}
+
+@keyframes shadow_move {
+    0% {
+        box-shadow: rgba(98, 98, 98 ,0.3) 0px -1px 0px 0px;
+    }
+    12% { 
+        box-shadow: rgba(98, 98, 98 ,0.3) 1px -1px 0px 0px;
+    }
+    25% {
+        box-shadow: rgba(98, 98, 98 ,0.3) 1px 0px 0px 0px;
+    }
+    37% {
+        box-shadow: rgba(98, 98, 98 ,0.3) 1px 1px 0px 0px;
+    }
+    50% {
+        box-shadow: rgba(98, 98, 98 ,0.3) 0px 1px 0px 0px;
+    }
+    64% {
+        box-shadow: rgba(98, 98, 98 ,0.3) -1px 1px 0px 0px;
+    }
+    75% {
+        box-shadow: rgba(98, 98, 98 ,0.3) -1px 0px 0px 0px;
+    }
+    88% {
+        box-shadow: rgba(98, 98, 98 ,0.3) -1px -1px 0px 0px;
+    }
+    100% {
+        box-shadow: rgba(98, 98, 98 ,0.3) 0px -1px 0px 0px;
+    }
+}
